@@ -1,5 +1,11 @@
 ## Developer Portfolio Landing Page Template
 
+
+###Docker Commands
+
+#To create a volume in docker:
+docker run --rm -it --volume="my-bundle:/usr/local/bundle" --volume="%cd%:/srv/jekyll" --publish 4000:4000 jekyll/jekyll:3.8 jekyll serve
+
 ### Introduction
 
 Use this template if you need a quick developer / data science portfolio! Based on a Minimal Jekyll theme for GitHub Pages.
