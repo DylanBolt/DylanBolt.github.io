@@ -3,7 +3,7 @@
 ---
 ### Business Analytics Projects
 
-[Using IMDb Data to Predict Movie Popularity in R](/pdf/movie_prediction.md)
+[Using IMDb Data to Predict Movie Popularity in R](/movie_prediction)
 <img src="images/movies_variable_importance.jpg?raw=true"/>
 
 ---
@@ -30,5 +30,3 @@
 
 
 ---
-<p style="font-size:11px">Page template forked from <a href="https://github.com/evanca/quick-portfolio">evanca</a></p>
-<!-- Remove above link if you don't want to attibute -->
