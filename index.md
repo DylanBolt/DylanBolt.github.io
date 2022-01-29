@@ -3,7 +3,7 @@
 ---
 ### Business Analytics Projects
 
-[Using IMDb Data to Predict Movie Popularity in R](/movie_prediction)
+[Using IMDb Data to Predict Movie Popularity in R](/pdf/movie_prediction.md)
 <img src="images/movies_variable_importance.jpg?raw=true"/>
 
 ---
