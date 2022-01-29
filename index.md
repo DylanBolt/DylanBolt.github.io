@@ -1,10 +1,10 @@
 ## Portfolio
 
 ---
-### Category Name 1 Test Test 123
+### Business Analytics Projects
 
-[Project 1 Title](/sample_page)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+[Using IMDb Data to Predict Movie Popularity in R](/movie_prediction)
+<img src="images/movies_variable_importance.jpg?raw=true"/>
 
 ---
 [Project 2 Title](/pdf/sample_presentation.pdf)
