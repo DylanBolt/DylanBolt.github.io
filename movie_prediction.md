@@ -10,7 +10,7 @@ Our dataset was created with IMDb data that included movie titles, year produced
 
 Because our clients are American companies, we chose to only analyze USA movies to ensure our results were congruent with the domestic movie market specifically. We removed movies that had null values for budget and income, as we noticed a good portion of these movies had not been released yet. We then scaled the values of duration, budget, and income after accounting for inflation on monetary features. We created a feature called “vote_class” which changes our predictor variable “avg_vote” to a categorical variable with bins including “Low” (rated 1-4.99), “Medium” (rated 5-6.99), and “High” (rated 7-10) for any classification models we ran. We created these bins with the context of what we considered to be low, medium, highly rated values along with ensuring we had enough data points in each bin.
 
-'''
+```
 rm(list = ls())
 imdb <- read.csv("movie_project.csv")
 
@@ -58,11 +58,12 @@ USAMovies$title <- NULL
 USAMovies$imdb_title_id <- NULL
 USAMovies$language <- NULL
 
-'''
+```
+
 ###Including popular actors, directors, writers, and production companies:
 We decided that including popular actors, directors, writers, and production companies would be a strong predictor of success, especially when conducting analysis from a business perspective. To include these factors as numeric variables, we downloaded CSV files (from IMDb), containing the top 100 actors, top 100 directors, and top 10 production companies. To incorporate the top production staff into our dataset, we created binary dummy variables, indicating whether the director, writer, or production company of any given movie is also included within their respective top lists (1 = yes, 0 = no). To include top actors, we created a feature called numTopActors that includes the number of top actors. In order to account for the timeline spread of our data, the CSV files we downloaded were the “top of all time”, which allowed us to identify the top actors/directors/writers of each decade.  By having these variables present, we can perform analysis to determine the impact of top level production staff on ratings. We considered the impacts of top actors by determining how many top 100 actors appeared in any given movie. In doing this, we can determine the implications of having one or more top 100 actors in our analysis.
 
-'''
+```
 
 #Create a new column that says whether the director is in the top100 of all time directors list
 top100directors <- read.csv("directors.csv")
@@ -162,12 +163,12 @@ USAMovies$worlwide_gross_income <- NULL
 USAMovies$international <- as.factor(ifelse(USAMovies$usa_gross_income == USAMovies$worldwide_gross_income,0,1))
 USAMovies$topdirector <- as.factor(USAMovies$topdirector)
 
-'''
+```
 
 ###Inflation:
 We realized that any revenue analysis conducted over time would be upward trending if we do not account for inflation (since the release date of our movies range from 1921-2020). Because of this, including values for budget and income for movies from 1921 and 2020 would prove inaccurate to their relative popularity and scale from the time they were released. To remedy this issue, we imported a csv (https://www.officialdata.org/us/inflation/1800?amount=) containing a dollar's worth for each year starting with 1921’s value of a dollar. We then applied this data to our data on budget and income for each year to create new features that account for inflation based on the year of the movie’s release.
 
-'''
+```
 #Read in inflation data:
 inflation <- read.csv('inflation_data.csv')
 inflation
@@ -183,4 +184,4 @@ USAMovies$grossWithInflation <- NA
 for (i in 1:nrow(USAMovies)){
 	USAMovies$grossWithInflation[i] <- USAMovies$usa_gross_income[i] * inflation[inflation$year == USAMovies$year[i], 'dollar_worth']
 }
-'''
+```
