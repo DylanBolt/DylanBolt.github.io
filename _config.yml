@@ -1,12 +1,12 @@
 title: Dylan Bolt # your name (or website title) here
 logo: "/images/Me in a suit.jpeg?raw=true" # your photo (or logo) here
 description: > # your text below (remove <br> elements if you don't need line breaks)
-  Business Analytics Master's Candidate  
+  Business Analytics Master's Candidate
   <br><br>
-  University of Colorado, Boulder      
+  University of Colorado, Boulder
   Leeds School of Business
   <br><br>
-  <a href="https://www.linkedin.com/in/dylan-bolt-51b535122/">View My LinkedIn Profile</a> 
-  
+  <a href="https://www.linkedin.com/in/dylantbolt/">View My LinkedIn Profile</a> 
+
 theme: jekyll-theme-minimal
 google_analytics: UA-000000-0 # your Google Analytics tracking ID here
