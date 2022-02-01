@@ -50,29 +50,26 @@ for (row in 1:nrow(USAMovies)){
 USAMovies$languageCount <- num_languages
 
 
+
 #Get rid of unimportant character columns
 USAMovies$description <- NULL
 USAMovies$country <- NULL
 USAMovies$title <- NULL
 USAMovies$imdb_title_id <- NULL
 USAMovies$language <- NULL
+
 '''
 ###Including popular actors, directors, writers, and production companies:
 We decided that including popular actors, directors, writers, and production companies would be a strong predictor of success, especially when conducting analysis from a business perspective. To include these factors as numeric variables, we downloaded CSV files (from IMDb), containing the top 100 actors, top 100 directors, and top 10 production companies. To incorporate the top production staff into our dataset, we created binary dummy variables, indicating whether the director, writer, or production company of any given movie is also included within their respective top lists (1 = yes, 0 = no). To include top actors, we created a feature called numTopActors that includes the number of top actors. In order to account for the timeline spread of our data, the CSV files we downloaded were the “top of all time”, which allowed us to identify the top actors/directors/writers of each decade.  By having these variables present, we can perform analysis to determine the impact of top level production staff on ratings. We considered the impacts of top actors by determining how many top 100 actors appeared in any given movie. In doing this, we can determine the implications of having one or more top 100 actors in our analysis.
 
-
 '''
+
 #Create a new column that says whether the director is in the top100 of all time directors list
 top100directors <- read.csv("directors.csv")
 directors <- top100directors$Name
 top100directors <- NULL
 
 USAMovies$topdirector <- ifelse(USAMovies$director %in% directors, 1,0)
-
-
-
-#Create a new column that says whether the director is in the top100 of all time directors list
-
 
 
 #Create a column that says whether movie was produced by a top production company:
