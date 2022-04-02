@@ -7,7 +7,7 @@
 <img src="images/movies_thumbnail.jpg?raw=true"/>
 
 ---
-[Project 2 Title](/pdf/sample_presentation.pdf)
+[Creating a Relational Database in MySQL Workbench](/hockey_database)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---

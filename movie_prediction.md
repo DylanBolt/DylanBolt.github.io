@@ -60,7 +60,7 @@ USAMovies$language <- NULL
 
 ```
 
-###Including popular actors, directors, writers, and production companies:
+### Including popular actors, directors, writers, and production companies:
 
 We decided that including popular actors, directors, writers, and production companies would be a strong predictor of success, especially when conducting analysis from a business perspective. To include these factors as numeric variables, we downloaded CSV files (from IMDb), containing the top 100 actors, top 100 directors, and top 10 production companies. To incorporate the top production staff into our dataset, we created binary dummy variables, indicating whether the director, writer, or production company of any given movie is also included within their respective top lists (1 = yes, 0 = no). To include top actors, we created a feature called numTopActors that includes the number of top actors. In order to account for the timeline spread of our data, the CSV files we downloaded were the “top of all time”, which allowed us to identify the top actors/directors/writers of each decade.  By having these variables present, we can perform analysis to determine the impact of top level production staff on ratings. We considered the impacts of top actors by determining how many top 100 actors appeared in any given movie. In doing this, we can determine the implications of having one or more top 100 actors in our analysis.
 
@@ -105,7 +105,7 @@ for (i in 1:nrow(USAMovies)){
 }  
 ```
 
-###More cleaning...
+### More cleaning...
 
 ```
 table(USAMovies$numTopActors)  
@@ -166,7 +166,7 @@ USAMovies$topdirector <- as.factor(USAMovies$topdirector)
 
 ```
 
-###Inflation:
+### Inflation:
 
 We realized that any revenue analysis conducted over time would be upward trending if we do not account for inflation (since the release date of our movies range from 1921-2020). Because of this, including values for budget and income for movies from 1921 and 2020 would prove inaccurate to their relative popularity and scale from the time they were released. To remedy this issue, we imported a csv (https://www.officialdata.org/us/inflation/1800?amount=) containing a dollar's worth for each year starting with 1921’s value of a dollar. We then applied this data to our data on budget and income for each year to create new features that account for inflation based on the year of the movie’s release.
 
@@ -188,7 +188,7 @@ for (i in 1:nrow(USAMovies)){
 }
 ```
 
-###Creating a streamlined dataframe for analysis
+### Creating a streamlined dataframe for analysis
 
 This process includes paring off extraneous columns, scaling numeric columns, and creating columns for each genre using R's stringr package.
 
@@ -237,7 +237,7 @@ clean_movies$languageCount <- USAMovies$languageCount
 colnames(clean_movies)[29] <- 'Sci_Fi'
 colnames(clean_movies)[23] <- 'Film_Noir'
 ```
-###Data Exploration
+### Data Exploration
 
 ```
 str(clean_movies)
@@ -271,7 +271,7 @@ plot(clean_movies$international, clean_movies$avg_vote)
 
 
 
-###Tree Models: Random forest, boosting
+### Tree Models: Random forest, boosting
 
 ```
 library(tree)
@@ -504,7 +504,7 @@ summary(mod)
 <img src="images/movies_gini.jpg?raw=true"/>
 
 
-###Feature Selection with Boruta package
+### Feature Selection with Boruta package
 
 ```
 #Try feature selection:
@@ -552,7 +552,7 @@ boruta_signif_FvotesF <- getSelectedAttributes(boruta_output, withTentative = FA
 <img src="images/movies_variable_importance.jpg?raw=true"/>
 
 
-###Deployment
+### Deployment
 
 Model implementation will allow us to work hand-in-hand with our clientele and discover plausible solutions to their creative project concerns. By allowing access to data on what their project entails: producer, director, starring roles and actors, production company, genre of film, will it be expanded globally and so on, we can conduct experimental models to determine the likelihood of viewership and user interactions on their site. Furthermore, recommending changes to increase probabilities of success for clients. For example, if Netflix is creating a ‘Netflix Original’ with an unknown director and Tom Hanks as the lead role, our models can reveal insights into the breakdown of situational changes. If the director is reassigned to Woody Allen, the projected average rating could increase twofold.
 Although any model we create can have superior accuracy than a competitor, one factor to consider when using data to predict results is bias. Influence from uncontrolled factors such as scandal or sudden complexities within a movie’s project can result in failures of hitting the ideal mark. Data predictions are useful tools but can only predict within the realms of the data at hand. That being said, with every project we consult with, our database will expand, creating an updated and unique database for each client's required solutions. Newly discovered stars, immaculate production companies, new-age directors, and so on can also impact the sought out popularity of your film. Adding this data to our database will quickly improve the accuracy of our recommendation.
