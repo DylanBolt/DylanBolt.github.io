@@ -4,11 +4,11 @@
 ### Business Analytics Projects
 
 [Using IMDb Data to Predict Movie Popularity in R](/movie_prediction)
-<img src="images/movies_thumbnail.jpg?raw=true"/>
+<img src="images/movie_project/movies_thumbnail.jpg?raw=true"/>
 
 ---
 [Creating a Relational Database in MySQL Workbench](/hockey_database)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+<img src="images/hockey_database/hockey_ER.jpg?raw=true"/>
 
 ---
 [Project 3 Title](http://example.com/)

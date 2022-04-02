@@ -267,7 +267,7 @@ plot(clean_movies$numTopActors, clean_movies$avg_vote)
 plot(clean_movies$international, clean_movies$avg_vote)
 ```
 
-<img src="images/movies_monthly.jpg?raw=true"/>
+<img src="images/movie_project/movies_monthly.jpg?raw=true"/>
 
 
 
@@ -499,9 +499,9 @@ pred <- predict(mod, testData)
 mean(sum((pred - trueIncome)^2))
 summary(mod)
 ```
-<img src="images/movies_boosting_results.jpg?raw=true"/>
+<img src="images/movie_project/movies_boosting_results.jpg?raw=true"/>
 
-<img src="images/movies_gini.jpg?raw=true"/>
+<img src="images/movie_project/movies_gini.jpg?raw=true"/>
 
 
 ### Feature Selection with Boruta package
@@ -549,7 +549,7 @@ boruta_signif_FvotesT <- getSelectedAttributes(boruta_output, withTentative = TR
 #Tentative = False
 boruta_signif_FvotesF <- getSelectedAttributes(boruta_output, withTentative = FALSE)
 ```
-<img src="images/movies_variable_importance.jpg?raw=true"/>
+<img src="images/movie_project/movies_variable_importance.jpg?raw=true"/>
 
 
 ### Deployment
