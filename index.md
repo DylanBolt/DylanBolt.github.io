@@ -7,7 +7,7 @@
 <img src="images/movie_project/movies_thumbnail.jpg?raw=true"/>
 
 ---
-[Creating a Relational Database in MySQL Workbench](/hockey_database)
+[Creating and Analyzing a Relational Database in MySQL Workbench & Tableau](/hockey_database)
 <img src="images/hockey_database/hockey_ER.jpg?raw=true"/>
 
 ---
