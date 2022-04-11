@@ -361,25 +361,37 @@ AND nationality= 'USA';
 ```
 ## Visualizations using Tableau
 
+### Highest Scoring Teams
+
 <img src="images/hockey_database/most_scoring_teams.jpg?raw=true"/>
 
 This shows the teams that score the most in our dataset using a fun word map. Unfortunately for some of the newer teams, it is hard to catch up to the mainstay teams like the Lightning, Islanders, Maple Leafs and Penguins.
+
+### Shots Made Vs. Saves for Each Goalie
 
 <img src="images/hockey_database/shots_vs_saves.jpg?raw=true"/>
 
 Using a bar plot to show the difference between shots made on and saves for each goalie.
 
+### Total Goals by Team
+
 <img src="images/hockey_database/total_goals_team.jpg?raw=true"/>
 
 I wanted to show the total goals by each team because it shows which team is more aggressive and this means their games are more fun to watch. I  joined game_skater_stats table and teams table using team_di, and calculated the sum of the goals and order by it. I used a bar chart.
+
+### Histogram of Player Height
 
 <img src="images/hockey_database/height_hist.jpg?raw=true"/>
 
 This visualization shows the distribution of players’ height. It has normal distribution, and the average height is approximately 185.42 cm, which is 6’1’’.
 
+### Winning Teams' Score Distribution by Position
+
 <img src="images/hockey_database/scores_by_position.jpg?raw=true"/>
 
 This visualization shows how goals are distributed when a team wins. Basically, it's a visualization of how likely our team is to win if we scored x amount of goals. This was created by breaking up the goals scored into bins, and then filtering for a win.
+
+### Avalanche's Average Goals by Month
 
 <img src="images/hockey_database/avalanche_goals_monthly.jpg?raw=true"/>
 

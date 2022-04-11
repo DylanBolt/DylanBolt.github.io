@@ -11,12 +11,12 @@
 <img src="images/hockey_database/hockey_ER.jpg?raw=true"/>
 
 ---
-[Project 3 Title](http://example.com/)
+[Project 3 Title](http://example.com/)SS
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
 
-### Category Name 2
+### More Projects
 
 - [Project 1 Title](http://example.com/)
 - [Project 2 Title](http://example.com/)
