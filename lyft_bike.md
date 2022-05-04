@@ -169,11 +169,11 @@ We were interested in	locating routes that offer customers enjoyable rides with 
 
 Below we will showcase a couple examples of what our query returned as the most popular and profitable routes.
 
-1. The route from Stanyan & Fell St. Station to 48th Ave. & Cabrillo St. Station had 38 record trips with average earnings of $24.39. After further inspection, this route starts on the east side of Golden Gate Park, goes through the park, past the San Francisco Botanical Gardens, and ends near Ocean Beach. We believe this route generates high earnings due to riders stopping and taking pictures or sightseeing in the park.
+- The route from Stanyan & Fell St. Station to 48th Ave. & Cabrillo St. Station had 38 record trips with average earnings of $24.39. After further inspection, this route starts on the east side of Golden Gate Park, goes through the park, past the San Francisco Botanical Gardens, and ends near Ocean Beach. We believe this route generates high earnings due to riders stopping and taking pictures or sightseeing in the park.
 
 <img src="images/lyft_bike/route_1.jpg?raw=true"/>
 
-2. The route from the Ferry Building Station to Buchanan St. & North Point St. Station has 20 recorded trips with average earnings of $14.42. The route goes along the famous San Francisco piers and through Fisherman’s Wharf. We expect this route has good earnings due to riders stopping to shop or take pictures along the piers.
+- The route from the Ferry Building Station to Buchanan St. & North Point St. Station has 20 recorded trips with average earnings of $14.42. The route goes along the famous San Francisco piers and through Fisherman’s Wharf. We expect this route has good earnings due to riders stopping to shop or take pictures along the piers.
 
 <img src="images/lyft_bike/route_2.jpg?raw=true"/>
 
