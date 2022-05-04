@@ -3,7 +3,7 @@
 ---
 
 [Lyft Bike Analysis using PySpark and GraphFrames](/lyft_bike)
-<img src="images/lyft_bike/lyft_network.jpg?raw=true"/>
+<img src="images/lyft_bike/lyft_network_edited.jpg?raw=true"/>
 
 ---
 [Using IMDb Data to Predict Movie Popularity in R](/movie_prediction)
