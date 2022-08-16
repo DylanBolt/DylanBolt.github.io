@@ -17,7 +17,7 @@
 
 ### More Projects
 
-- [Predicting Solar Curtailment with Logistic Regression](/solar_curtailment_prediction)
+- [Predicting Solar Curtailment with Logistic Regression](/solar_curtailment)
 
 
 ---
